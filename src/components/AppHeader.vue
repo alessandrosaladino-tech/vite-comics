@@ -1,4 +1,7 @@
+
+
 <script>
+
 export default {
     name : "AppHeader"
 }
@@ -40,7 +43,9 @@ export default {
 
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
+
+@use '../assets/scss/Partials/variables' as *;
 
 #site_header {
     height: 150px;
