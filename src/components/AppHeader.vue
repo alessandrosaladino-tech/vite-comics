@@ -11,9 +11,9 @@ export default {
  
  <header id="site_header">
 
-<div class="container ">
+<div class="container h-100">
 
-  <div class="row align-items-center">
+  <div class="row align-items-center align-content-center h-100">
 
     <div class="col-5">
       <img src="../assets/img/dc-logo.png" alt="">
