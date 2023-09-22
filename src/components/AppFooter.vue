@@ -87,7 +87,7 @@ export default {
                         <img src="../assets/img/footer-pinterest.png" alt="">
                     </a>
                     <a href="##">
-                        <img src="./assets/img/footer-periscope.png" alt="">
+                        <img src="../assets/img/footer-periscope.png" alt="">
                     </a>
                 </div>
 
