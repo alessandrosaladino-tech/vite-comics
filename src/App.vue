@@ -1,26 +1,21 @@
 <script>
-
+import AppHeader from "./components/AppHeader.vue";
 
 export default {
   components: {
-
+    AppHeader,
   }
 }
 </script>
 
 <template>
-    
-    <header></header>
 
-    <main></main>
+  <AppHeader></AppHeader>
 
-    <footer></footer>
+  
+  <main></main>
 
-
-
-
+  <footer></footer>
 </template>
 
-<style>
-
-</style>
+<style></style>
