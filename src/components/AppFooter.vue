@@ -1,6 +1,38 @@
 <script>
 export default {
     name: "AppFooter",
+    data() {
+        return {
+            dcComics: ["Characters", "Comics", "Movies", "TV", "Games", "Videos", "News"],
+            shop: ["Shop DC", "Shop DC Collectibles"],
+            dc: ["Terms Of Use", "Privacy Policy (New)", "Ad Choices", "Advertising", "Jobs", "Subscriptions", "Talent Workshops", "CPSC Certificates", "Ratings", "Shop Help", "Contact us"],
+            sites: ["DC", "MAD Magazine", "DC Kids", "DC Universe", "DC Power Visa"],
+
+
+            followInfo: [
+                {
+                    img: '../assets/img/footer-facebook.png',
+                    href: '##'
+                },
+                {
+                    img: '../assets/img/footer-twitter.png',
+                    href: '##'
+                },
+                {
+                    img: '../assets/img/footer-youtube.png',
+                    href: '##'
+                },
+                {
+                    img: '../assets/img/footer-pinterest.png',
+                    href: '##'
+                },
+                {
+                    img: '../assets/img/footer-periscope.png',
+                    href: '##'
+                }
+            ]
+        }
+    }
 }
 </script>
 
@@ -14,50 +46,29 @@ export default {
                     <div class="col-2">
                         <h3>DC COMICS</h3>
                         <ul>
-                            <li>Characters</li>
-                            <li>Coimics</li>
-                            <li>Movies</li>
-                            <li>TV</li>
-                            <li>Games</li>
-                            <li>Videos</li>
-                            <li>News</li>
+                            <li v-for="item in dcComics">{{ item }}</li>
                         </ul>
 
                         <h3>SHOPS</h3>
                         <ul>
-                            <li>Shop DC</li>
-                            <li>Shop DC Collectibles</li>
+                            <li v-for="item in shop">{{ item }}</li>
                         </ul>
                     </div>
                     <div class="col-2">
                         <h3>DC</h3>
                         <ul>
-                            <li>Terms of Use</li>
-                            <li>Privacy policy (New)</li>
-                            <li>Ad Choices</li>
-                            <li>Advertising</li>
-                            <li>Jobs</li>
-                            <li>Subscriptions</li>
-                            <li>Talent Workshops</li>
-                            <li>CPSC Certificates</li>
-                            <li>Ratings</li>
-                            <li>Shop Help</li>
-                            <li>Contact us</li>
+                            <li v-for="item in dc">{{ item }}</li>
                         </ul>
                     </div>
                     <div class="col-2 height_68">
                         <h3>SITES</h3>
                         <ul>
-                            <li>DC</li>
-                            <li>MAD Magazine</li>
-                            <li>DC Kids</li>
-                            <li>DC Universe</li>
-                            <li>DC Power Visa</li>
+                            <li v-for="item in sites">{{ item }}</li>
                         </ul>
                     </div>
                     <div class="col-6 logo"></div>
                 </div>
-                
+
             </div>
 
         </div>
@@ -75,20 +86,8 @@ export default {
 
                 <div class=" d-flex align-items-center gap-4">
                     <h5 class="m-0">FOLLOW US</h5>
-                    <a href="##">
-                        <img src="../assets/img/footer-facebook.png" alt="">
-                    </a>
-                    <a href="##">
-                        <img src="../assets/img/footer-twitter.png" alt="">
-                    </a>
-                    <a href="##">
-                        <img src="../assets/img/footer-youtube.png" alt="">
-                    </a>
-                    <a href="##">
-                        <img src="../assets/img/footer-pinterest.png" alt="">
-                    </a>
-                    <a href="##">
-                        <img src="../assets/img/footer-periscope.png" alt="">
+                    <a v-for="icons in followInfo" href="followInfo.href">
+                        <img :src="followInfo.img" alt="">
                     </a>
                 </div>
 
@@ -135,6 +134,8 @@ export default {
     & h5 {
         color: $dc_primary;
     }
+
+
 }
 
 .height_68 {
@@ -146,7 +147,7 @@ export default {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height: 110%;
-    
+    height: 100%;
+
 }
 </style>
