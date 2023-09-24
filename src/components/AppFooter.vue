@@ -9,9 +9,9 @@ export default {
 
         <div class="footer_info">
 
-            <div class="container-info w-75 h-100 p-3 m-auto d-flex align-items-center">
-                <div class="w-50 d-flex">
-                    <div class="col">
+            <div class="container-info w-75 h-100  m-auto d-flex ">
+                <div class="container d-flex align-items-center">
+                    <div class="col-2">
                         <h3>DC COMICS</h3>
                         <ul>
                             <li>Characters</li>
@@ -29,7 +29,7 @@ export default {
                             <li>Shop DC Collectibles</li>
                         </ul>
                     </div>
-                    <div class="col">
+                    <div class="col-2">
                         <h3>DC</h3>
                         <ul>
                             <li>Terms of Use</li>
@@ -45,7 +45,7 @@ export default {
                             <li>Contact us</li>
                         </ul>
                     </div>
-                    <div class="col">
+                    <div class="col-2 height_68">
                         <h3>SITES</h3>
                         <ul>
                             <li>DC</li>
@@ -55,8 +55,9 @@ export default {
                             <li>DC Power Visa</li>
                         </ul>
                     </div>
+                    <div class="col-6 logo"></div>
                 </div>
-
+                
             </div>
 
         </div>
@@ -101,6 +102,7 @@ export default {
 
 <style lang="scss" scoped>
 @use '../assets/scss/Partials/variables' as *;
+
 .site_footer {
     height: 750px;
 }
@@ -110,11 +112,11 @@ export default {
     height: 600px;
     background-size: cover;
 
-    
-    &  li {
+
+    & li {
         color: $dc_light_grey;
         list-style-type: none;
-        font-size: 20px;        
+        font-size: 20px;
     }
 
     & ul {
@@ -135,5 +137,16 @@ export default {
     }
 }
 
+.height_68 {
+    height: 65%;
+}
 
+.logo {
+    background-image: url("../assets/img/dc-logo-bg.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 110%;
+    
+}
 </style>
