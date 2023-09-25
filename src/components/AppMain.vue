@@ -6,7 +6,7 @@ export default {
   components: {
     ProductItem,
   },
-   data() {
+  data() {
     return {
       products
     }
@@ -23,10 +23,17 @@ export default {
       <div class="container">
         <div class="row row-cols-6 g-4">
 
-          <ProductItem :image="product.thumb" :title="product.series" v-for="product in products"></ProductItem>
+          <ProductItem :image="product.thumb" :title="product.series" :price="product.price" v-for="product in products">
+          </ProductItem>
 
         </div>
       </div>
+      <div class="container text-center pb-3 pt-5">
+        <button class="btn text-white rounded-0 fs-5 bg_primary">
+          LOAD MORE
+        </button>
+      </div>
+
     </div>
 
     <div class="main_store">
@@ -69,10 +76,12 @@ export default {
 .main_top {
   background-color: $dc_secondary;
   color: white;
-  display: flex;
   align-items: center;
 }
 
+.bg_primary {
+  background-color: $dc_primary;
+}
 
 .main_store {
   background-color: $dc_primary;
