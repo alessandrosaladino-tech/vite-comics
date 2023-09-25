@@ -9,7 +9,7 @@ export default {
     <a href="##">
         <div class="col pt-5">
             <div class="card h-50 comics">
-                <img :src="image" alt="" class="card-img-top card_img_h">
+                <img :src="image" alt="" class="card-img-top card_img_h rounded-0">
                 <div class="card-bottom">
                     <h6 class="text-uppercase pt-2 title_fs">{{ title }}</h6>
                     <p>{{ price }}</p>
