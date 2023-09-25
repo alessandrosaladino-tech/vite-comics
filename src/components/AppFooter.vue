@@ -14,7 +14,7 @@ export default {
     },
     methods: {
         getImagePath: function(img) {
-            return new URL("../assets/${img}", import.meta.url).href;
+            return new URL("../assets/"+ img, import.meta.url).href;
         }
     }
 }
@@ -123,7 +123,7 @@ export default {
 }
 
 .height_68 {
-    height: 65%;
+    height: 78%;
 }
 
 .logo {
