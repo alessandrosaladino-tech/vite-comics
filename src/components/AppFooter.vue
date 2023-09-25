@@ -9,7 +9,7 @@ export default {
             sites: ["DC", "MAD Magazine", "DC Kids", "DC Universe", "DC Power Visa"],
 
 
-            followInfo: ['../assets/img/footer-facebook.png', '../assets/img/footer-twitter.png', '../assets/img/footer-youtube.png', '../assets/img/footer-pinterest.png', '../assets/img/footer-periscope.png']
+            followInfo: ['img/footer-facebook.png', 'img/footer-twitter.png', 'img/footer-youtube.png', 'img/footer-pinterest.png', 'img/footer-periscope.png']
         }
     },
     methods: {
