@@ -11,7 +11,7 @@ export default {
             <div class="card h-50 comics">
                 <img :src="image" alt="" class="card-img-top card_img_h">
                 <div class="card-bottom">
-                    <h6>{{ title }}</h6>
+                    <h6 class="text-uppercase pt-2 title_fs">{{ title }}</h6>
                     <p>{{ price }}</p>
                 </div>
             </div>
@@ -32,6 +32,14 @@ export default {
 
 .col {
     height: 10%;
+
+    & .title_fs {
+       font-size: 15px;
+    }
+
+    & p {
+        font-size: 13px;
+    }
 }
 
 .card_img_h {

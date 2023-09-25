@@ -108,7 +108,7 @@ export default {
 
 .footer_info {
     background-image: url("../assets/img/footer-bg.jpg");
-    height: 600px;
+    height: 500px;
     background-size: cover;
 
 

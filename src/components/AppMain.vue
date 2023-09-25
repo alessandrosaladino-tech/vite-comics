@@ -38,7 +38,7 @@ export default {
 
     <div class="main_store">
       <div class="container">
-        <div class="row gap-1">
+        <div class="row gap-1 text-center">
 
           <div class="col">
             <img src="../assets/img/buy-comics-digital-comics.png" alt="">
