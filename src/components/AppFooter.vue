@@ -9,28 +9,12 @@ export default {
             sites: ["DC", "MAD Magazine", "DC Kids", "DC Universe", "DC Power Visa"],
 
 
-            followInfo: [
-                {
-                    img: '../assets/img/footer-facebook.png',
-                    href: '##'
-                },
-                {
-                    img: '../assets/img/footer-twitter.png',
-                    href: '##'
-                },
-                {
-                    img: '../assets/img/footer-youtube.png',
-                    href: '##'
-                },
-                {
-                    img: '../assets/img/footer-pinterest.png',
-                    href: '##'
-                },
-                {
-                    img: '../assets/img/footer-periscope.png',
-                    href: '##'
-                }
-            ]
+            followInfo: ['../assets/img/footer-facebook.png', '../assets/img/footer-twitter.png', '../assets/img/footer-youtube.png', '../assets/img/footer-pinterest.png', '../assets/img/footer-periscope.png']
+        }
+    },
+    methods: {
+        getImagePath: function(img) {
+            return new URL("../assets/${img}", import.meta.url).href;
         }
     }
 }
@@ -86,8 +70,8 @@ export default {
 
                 <div class=" d-flex align-items-center gap-4">
                     <h5 class="m-0">FOLLOW US</h5>
-                    <a v-for="icons in followInfo" href="followInfo.href">
-                        <img :src="followInfo.img" alt="">
+                    <a v-for="icons in followInfo" href="#">
+                        <img :src="getImagePath(icons)" alt="">
                     </a>
                 </div>
 
